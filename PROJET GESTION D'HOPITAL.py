@@ -444,14 +444,13 @@ fen = Tk()
 fen.title("Gestion Hôpital")
 fen.geometry("850x650") 
 
-LIGHT_BLUE = "#dbeeff"   # fond clair
-DARK_BLUE = "#2451A0"    # bleu foncé pour éléments importants
-ACCENT_BLUE = "#2b6fd6"  # teinte intermédiaire pour onglets
-TEXT_COLOR = "#032a63"   # couleur du texte (bleu très foncé)
-ENTRY_BG = "#ffffff"      # fond des champs de saisie
+DARK_BLUE = "#2451A0" 
+ACCENT_BLUE = "#2b6fd6" 
+TEXT_COLOR = "#032a63"   
+ENTRY_BG = "#ffffff" 
 
 fen.configure(bg=LIGHT_BLUE)
-# Defaults généraux
+
 fen.option_add("*Background", LIGHT_BLUE)
 fen.option_add("*foreground", TEXT_COLOR)
 fen.option_add("*Frame.background", LIGHT_BLUE)
@@ -461,7 +460,7 @@ fen.option_add("*Entry.background", ENTRY_BG)
 fen.option_add("*Entry.foreground", TEXT_COLOR)
 fen.option_add("*Listbox.background", ENTRY_BG)
 fen.option_add("*Listbox.foreground", TEXT_COLOR)
-# Boutons et menus (plus foncés pour contraste)
+
 fen.option_add("*Button.background", DARK_BLUE)
 fen.option_add("*Button.foreground", "white")
 fen.option_add("*Menubutton.background", ACCENT_BLUE)
@@ -616,3 +615,4 @@ afficher("rendezvous")
 
 afficher_onglet(frame_patients)
 fen.mainloop()
+
